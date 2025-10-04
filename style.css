@@ -1,0 +1,42 @@
+#subdiv {
+    position: relative;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+#imgdiv {
+    display: flex;
+    overflow-x: auto;
+    aspect-ratio: 16 / 9;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    
+
+}
+
+#imgdiv img {
+    flex: 1 0 100%;
+    /* 1 represent every image should take same size . 100 means it take 100 % of its parent element */
+    scroll-snap-align: start;
+    object-fit: cover;
+    /* to fill height and width of its original images  */
+
+}
+
+.navigation {
+    height: 20px ;
+    width:  20px;
+    border-radius: 50%;
+    background-color: bisque;
+    transform: translate(-50%);
+    z-index: 1;
+}
+
+.navigation:hover {
+    cursor: pointer;
+    background-color: rgb(181, 178, 178);
+}
+.scrollimg{
+    width: 100%;
+    padding: 50px;
+}
